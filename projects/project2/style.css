@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  background: #759abe;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+input,
+select,
+button {
+  padding: 8px;
+}
+
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+
+#taskList li {
+  background: #263c79;
+  color: white;
+  padding: 8px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+
+#taskList li span {
+  flex: 1;
+  margin-left: 8px;
+}
+
+
+#taskList li input[type="checkbox"]:checked+span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+#status {
+  text-align: center;
+  color: red;
+}
+
+#search-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}

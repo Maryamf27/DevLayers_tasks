@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>Smart Task Manager</h2>
+
+
+  <form id="taskForm">
+    <!-- <input type="text" id="taskInput" placeholder="Enter task" /> -->
+    <input type="file" name="" id="fileInput" />
+    <button>Add</button>
+  </form>
+
+  <div id="search-filter">
+    <input type="text" id="search" placeholder="Search task" />
+
+
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
+    </select>
+  </div>
+
+
+
+  <p id="status"></p>
+  <ul id="taskList"></ul>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
